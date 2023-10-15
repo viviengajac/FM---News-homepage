@@ -52,6 +52,9 @@ header nav {
     gap: 40px;
 }
 #hamburgerButton {
+    
+    position: fixed;
+    right: 20px;
     width: 50px;
     height: 25px;
     background: none;
