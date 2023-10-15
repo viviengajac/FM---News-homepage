@@ -52,7 +52,6 @@ header nav {
     gap: 40px;
 }
 #hamburgerButton {
-    
     position: fixed;
     right: 20px;
     width: 50px;
@@ -61,6 +60,7 @@ header nav {
     border: none;
     display: none;
     transition: .5s;
+    z-index: 9;
 }
 #hamburgerButton input {
     position: absolute;
@@ -82,6 +82,8 @@ header nav {
     transform: scale(1.2);
 }
 #hamburgerButton input:checked ~ img {
+    position: sticky;
+    right: 20px;
     width: 25px;
     transform: rotate(90deg);
     content: url(./images/icon-menu-close.svg);
